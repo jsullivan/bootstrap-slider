@@ -1249,12 +1249,15 @@ $("#ex24").slider({});
 
     <!-- core JavaScript
     ================================================== -->
-    <script type='text/javascript' src="<%= js.jquery %>"></script>
-    <script type='text/javascript' src="<%= js.slider %>"></script>
-    <script type='text/javascript' src="<%= js.highlightjs %>"></script>
+    <script src="<%= js.jquery %>"></script>
+    <script src="<%= js.bootstrap %>"></script>
+    <script src="<%= js.slider %>"></script>
+    <script src="<%= js.highlightjs %>"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script type='text/javascript'>
+    <script>
     	$(document).ready(function() {
+            $('.tooltip').tooltip();
+
     		/* Example 1 */
 	    	$('#ex1').slider({
 	          	formatter: function(value) {
